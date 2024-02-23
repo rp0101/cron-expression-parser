@@ -4,7 +4,7 @@ cron-expression-parser is a simple cron parser that tells when a cron will be ru
 
 ## Local Setup
 * Clone the repository and unzip in your local machine
-* Install golang
+* Install golang: https://golang.org/doc/install
 * Download and Install all the dependent packages
 ```bash
  go mod download
