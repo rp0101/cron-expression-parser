@@ -3,12 +3,13 @@ package main
 import (
 	"cron-expression-parser/controller"
 	"fmt"
+	"log"
 	"os"
 )
 
 func main() {
 	if len(os.Args) != 2 {
-		fmt.Println("Usage: your-program 'cron_string'")
+		log.Println("Please enter the cron string in correct format")
 		os.Exit(1)
 	}
 	cronStr := os.Args[1]
