@@ -1,4 +1,4 @@
-package respository
+package engine
 
 import (
 	"cron-expression-parser/util"
@@ -7,13 +7,13 @@ import (
 	_ "strings"
 )
 
-type CronRepository struct {
+type CronEngine struct {
 }
-type ICronRepository interface {
-	ParseCronRepository(string, int, int) string
+type ICronEngine interface {
+	ParseCronEngine(string, int, int) string
 }
 
-func (cr *CronRepository) ParseCronRepository(cronStr string, min int, max int) string {
+func (cr *CronEngine) ParseCronEngine(cronStr string, min int, max int) string {
 
 	if strings.Contains(cronStr, "*/") {
 		value := util.StepValues(cronStr, min, max)
@@ -34,7 +34,7 @@ func (cr *CronRepository) ParseCronRepository(cronStr string, min int, max int) 
 	return cronStr
 }
 
-func NewCronRepository() *CronRepository {
-	cronRepository := new(CronRepository)
-	return cronRepository
+func NewCronEngine() *CronEngine {
+	cronEngine := new(CronEngine)
+	return cronEngine
 }
