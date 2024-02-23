@@ -18,3 +18,8 @@ cron-expression-parser is a simple cron parser that tells when a cron will be ru
  go run main.go "cron_string"
  eg: go run main.go "*/15 0 */2 * 1-7 /usr/bin/find"
 ```
+* Run the tests
+```bash
+ go test cron-expression-parser/tests -run nameOfTextCase
+ eg: go test cron-expression-parser/tests -run TestParseCronService_Fail
+```
