@@ -20,6 +20,6 @@ cron-expression-parser is a simple cron parser that tells when a cron will be ru
 ```
 * Run the tests
 ```bash
- go test cron-expression-parser/tests -run nameOfTextCase
+ go test cron-expression-parser/tests -run nameOfTestCase
  eg: go test cron-expression-parser/tests -run TestParseCronService_Fail
 ```
